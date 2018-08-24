@@ -2,11 +2,18 @@
 <html>
  <head>
    <meta charset='utf-8'>
-   <title>Hello</title>
+   <title>django_girls</title>
  </head>
 
  <body>
    <h1>Welcome!</h1>
  </body>
 
+ {% for post in posts %}
+ <div>
+   <p>poblished:{{post.published_date}}</p>
+   <h1><a href = "">{{post.title}}</a></h1>
+   <p>{{post.text}}</p>
+   {{post}}
+ {% endfor %}
 </html>
